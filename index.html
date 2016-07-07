@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>InstaGrabbit</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha256-3dkvEK0WLHRJ7/Csr0BZjAWxERc5WH7bdeUya2aXxdU= sha512-+L4yy6FRcDGbXJ9mPG8MT/3UCDzwR9gPeyFNMCtInsol++5m3bk2bXWKdZjvybmohrAsn3Ua5x8gfLnbE1YkOg==" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+        <div class="container">
+          <div class="row upper hidden-xs">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8">
+              <i class="fa fa-instagram fa-5x pull-right"></i>
+              <h1 class="text-center">InstaGrabbit</h1>
+            </div>
+            <div class="col-sm-2">
+            </div>
+          </div>
+          <div class="row upper visible-xs-block">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8">
+              <h1 class="text-center">InstaGrabbit</h1>
+            </div>
+            <div class="col-sm-2">
+            </div>
+          </div>
+          <br>
+          <div class="alert alert-danger text-center" id="warning">
+            <span id="error"><strong>Error!</strong> URL Field is Empty</span>
+          </div>
+          <div class="center">
+            <div class="hidden-xs">
+              <h3>How To Use:</h3>
+              <p class="text-center">In your browser, log into your instagram account. Choose a photo that you want to download then click on it, and copy the url. Paste that url into the field below and click download. It's as simple as that! Enjoy! Currently only works with public profiles!</p>
+            </div>
+            <div class="visible-xs-block">
+              <h3 class="text-center">How To Use:</h3>
+              <p class="text-center">In your browser, log into your instagram account. Choose a photo that you want to download then click on it, and copy the url. Paste that url into the field below and click download. It's as simple as that! Enjoy! Currently only works with public profiles!</p>
+            </div>
+            <img src="ajax-loader.gif" alt="loading" id="loader">
+          </div>
+          <!--Image-->
+          <div class="container" >
+            <img src="#" alt="image" class="imagedownload" id='preview'>
+            <a href="#" class="imagedownload text-center" id="link">Right click here and choose 'save as' to download.</a>
+          </div>
+          <div class="bottom text-center">
+            <form class="form-inline text-center" id="target">
+              <div class="form-group">
+                <h3 class="hidden-xs">Paste the url of the photo you want to download below!</h3>
+                <br>
+                <input type="url" placeholder="Instagram url" id="imagefield"></input>
+                <input type="submit"></input>
+              </div>
+            </form>  
+          </div>
+      </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
